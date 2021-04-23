@@ -1,0 +1,39 @@
+<div class="containerhtml">
+  <div class="containerbody">
+    <div id="login-page" class="row">
+    <div class="col s12 z-depth-6 card-panel">
+      <form class="login-form">
+        <div class="row">
+          <div class="col s12 center">
+            <img src="assets/img/logo.png" style="filter: invert(1);
+    margin-top: 20px;" width="150px" alt="">
+            <h4>Iniciar sesión</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mail_outline</i>
+            <input #email class="validate" id="email" type="email">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock_outline</i>
+            <input #contrasena id="password" type="password">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a (click)="iniciarSesion(email.value,contrasena.value)" class="btn waves-effect waves-light col s12">Iniciar sesión</a>
+            <!-- <a [routerLink]="['/home']" class="btn waves-effect waves-light col s12">Iniciar sesión</a> -->
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<nav class="nav-extended grey darken-4">
+    <div class="nav-wrapper">
+      <a  class="brand-logo center"><img src="assets/img/logo.png" width="150px" alt=""></a>
+      <a  data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger"  data-target="dropdown1">{{dataUser.nombre}}<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a (click)="cerrarSesion()">Cerrar sesión</a></li>
+</ul>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li>{{dataUser.nombre}}</li>
+        <li><a class="divider"></a></li>
+        <li><a (click)="cerrarSesion()">Cerrar sesión</a></li>
+  </ul>
